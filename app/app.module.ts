@@ -2,6 +2,7 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BugModule } from './bugs/bug.module';
 import { AppRoutingModule } from './app-routing.module';
+import { CoreModule } from './core/core.module';
 
 /**Components */
 import { AppComponent }   from './app.component';
@@ -10,7 +11,8 @@ import { NavBarComponent } from './navbar/navbar.component';
   imports: [ 
     BrowserModule, 
     BugModule, 
-    AppRoutingModule 
+    AppRoutingModule,
+    CoreModule.forRoot() 
     ],
   declarations: [ 
     AppComponent,
