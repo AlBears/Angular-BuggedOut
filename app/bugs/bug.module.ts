@@ -4,6 +4,7 @@ import { BugRoutingModule } from './bug-routing.module';
 
 /**Component */
 import { BugListComponent } from './bug-list/bug-list.component';
+import { BugDetailComponent } from './bug-detail/bug-detail.component';
 
 /**Service */
 import { BugService } from './service/bug.service';
@@ -15,7 +16,8 @@ import { BugService } from './service/bug.service';
          ],
     exports: [],
     declarations: [
-        BugListComponent
+        BugListComponent,
+        BugDetailComponent
     ],
     providers: [ BugService ],
 })
